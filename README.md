@@ -21,34 +21,3 @@ npm i -g truffle truffle-flattener
 ./scripts/buildFull.sh
 truffle migrate
 ```
-
-## Get space entity
-```
-const SpaceRegistry = artifacts.require('SpaceRegistry');
-const landRegistryProxyAddress = "0x2990058a7c971e004b2c019dbe5ff73dfcde03ce";
-const space = await SpaceRegistry.at(landRegistryAddress);
-```
-
-## Assign(and create) parcel to address
-```
-let parcel = {x: 1, y: 2, address: "0xf0430bbb78c3c359c22d4913484081a563b86170"};
-const transaction = await land.assignNewParcel.sendTransaction(
-    parcel.x,
-    parcel.y,
-    parcel.address,
-    {
-        gas: 1e6
-    }
-)
-
-```
-
-## Check parcel assigned to owner
-```
-const ownerAddress = await space.ownerOfSpace(1, 2);
-```
-
-## Get coordinates of parcels, which belongs to owner
-```
-const [x, y] = await space.landOf(ownerAddress)
-```
