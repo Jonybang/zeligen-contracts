@@ -1,0 +1,48 @@
+{
+  "name": "space-contracts",
+  "version": "2.0.0",
+  "description": "Contract for Andromeda's Space",
+  "scripts": {
+    "build": "scripts/buildFull.sh",
+    "deploy": "truffle migrate",
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andromedaspace/space-contracts.git"
+  },
+  "author": "The Andromeda Team",
+  "bugs": {
+    "url": "https://github.com/andromedaspace/space-contracts/issues"
+  },
+  "homepage": "https://github.com/andromedaspace/space-contracts#readme",
+  "dependencies": {
+    "openzeppelin-solidity": "^1.9.0"
+  },
+  "devDependencies": {
+    "abi-decoder": "^1.0.9",
+    "async": "^2.6.0",
+    "babel-eslint": "^8.2.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.1",
+    "eslint": "^4.18.2",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.4.0",
+    "ethereumjs-abi": "^0.6.5",
+    "ganache-cli": "^6.1.0",
+    "mocha": "^3.5.3",
+    "npx": "^9.7.1",
+    "prettier": "^1.11.1",
+    "solidity-sha3": "^0.4.1",
+    "truffle": "^4.1.7",
+    "truffle-flattener": "^1.2.4",
+    "truffle-hdwallet-provider": "0.0.3",
+    "web3": "^1.0.0-beta.34"
+  }
+}
